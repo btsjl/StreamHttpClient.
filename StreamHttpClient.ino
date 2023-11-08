@@ -21,7 +21,7 @@ void loop() {
     HTTPClient http;
 
     http.begin(client, "http://getweather.market.alicloudapi.com/lundear/weather1d?areaCode=420100");
-    http.addHeader("Authorization", "APPCODE 3d48b386c3cc4276ae355cbdfe25f3ee");
+    http.addHeader("Authorization", "APPCODE xxxxxxxxxx");
     int httpCode = http.GET();
     if (httpCode > 0) {
       if (httpCode == HTTP_CODE_OK) {
